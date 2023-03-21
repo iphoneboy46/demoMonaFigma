@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 1920px;
+    height:1080px;
+    background: url(./image/img-pip@2x\ 1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    opacity: 80%;
+   
+}
+
+header::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0) 0%,  
+    #000000) 
+}

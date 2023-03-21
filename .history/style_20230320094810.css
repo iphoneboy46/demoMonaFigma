@@ -1,0 +1,15 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 1920px;
+    height:1080px;
+    background: url(./image/img-pip@2x\ 1.png);
+    background-size: cover;
+    opacity: 80%;
+    background-image: linear-gradient(rgba(37, 4, 4, 0)  0%
+    #000000  100%);
+}
