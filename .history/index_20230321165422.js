@@ -14,6 +14,8 @@ window.onload = () => {
       let list = document.querySelector(".section_top-right-container");
       list.prepend(items[items.length - 1]);
     };
+
+
   }
 
   slider();
@@ -28,6 +30,8 @@ window.onload = () => {
       inputSearch.classList.toggle("active");
       console.log("asdasd");
     };
+
+    
   }
 
   clickSearch();
@@ -41,6 +45,8 @@ window.onload = () => {
     btnNav.onclick = () => {
       listNav.classList.toggle("active2");
     };
+
+   
   }
 
   clickNav();
@@ -83,9 +89,17 @@ window.onload = () => {
       btnNavMobi.style.display = "block";
       document.body.style.overflow = "auto";
     };
+
+    window.onclick = () =>{
+      if(menuMB.style.left === "0"){
+        console.log("ádasd");
+      }
+      menuMB.style.left = "-100%";
+      btnExitsMobi.style.display = "none";
+      btnNavMobi.style.display = "block";
+      document.body.style.overflow = "auto";
+    }
   }
 
   handleMenuMobile();
 };
-
-

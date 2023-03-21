@@ -88,4 +88,13 @@ window.onload = () => {
   handleMenuMobile();
 };
 
+window.onclick = () => {
+  let btnNavMobi = document.querySelector(".menu-mobi-icon");
+  let btnExitsMobi = document.querySelector(".menu-mobi-icon-exits");
+  let menuMB = document.querySelector(".menu-mobile");
 
+  menuMB.style.left = "-100%";
+  btnExitsMobi.style.display = "none";
+  btnNavMobi.style.display = "block";
+  document.body.style.overflow = "auto";
+};
