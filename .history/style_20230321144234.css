@@ -2039,8 +2039,8 @@ h2 {
 
   .title-4 {
     position: absolute;
-    top: 5%;
-    left: 50%;
+    top: 20%;
+    left: 40%;
     transform: translate(-50%, -50%);
   }
 
@@ -2048,7 +2048,7 @@ h2 {
     display: flex;
     justify-content: center;
     cursor: pointer;
-    top: -60px;
+    top: -0px;
     transform: translateX(-50%);
     left: 50%;
     position: absolute;
@@ -2472,16 +2472,4 @@ h2 {
     width: 100%;
     height: 100%;
   }
-
-  .footer_bottom {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
-    padding: 0px;
-}
-
-.footer_bottom-left{
-  margin-bottom: 20px;
-}
 }
