@@ -31,7 +31,9 @@ window.onload = () => {
       console.log("asdasd");
     };
 
-    
+    window.onclick = () => {
+      inputSearch.classList.toggle("active");
+    }
   }
 
   clickSearch();

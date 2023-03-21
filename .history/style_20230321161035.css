@@ -2066,7 +2066,7 @@ h2 {
     transform: translateX(-50%);
     left: 50%;
     position: absolute;
-    z-index: 10;
+    z-index: 10px;
   }
 
   .section_top-right {

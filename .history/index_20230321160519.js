@@ -31,7 +31,9 @@ window.onload = () => {
       console.log("asdasd");
     };
 
-    
+    window.onclick = () => {
+      inputSearch.classList.toggle("active");
+    }
   }
 
   clickSearch();
@@ -46,7 +48,9 @@ window.onload = () => {
       listNav.classList.toggle("active2");
     };
 
-   
+    window.onclick = () =>{
+      listNav.classList.toggle("active2");
+    }
   }
 
   clickNav();

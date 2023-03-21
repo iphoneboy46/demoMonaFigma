@@ -2066,7 +2066,6 @@ h2 {
     transform: translateX(-50%);
     left: 50%;
     position: absolute;
-    z-index: 10;
   }
 
   .section_top-right {
@@ -2075,6 +2074,7 @@ h2 {
     position: absolute;
     object-fit: cover;
     transition: all 0.5s linear;
+    z-index: 1;
   }
 
   .section_top-bottom > .btn-prev {
