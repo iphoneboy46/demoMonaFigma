@@ -25,24 +25,6 @@ body {
   display: none;
 }
 
-.modal-2{
-  position:fixed;
-  inset: 0;
-  width: 100%;height: 100%;
-  background-color: #0b0b0aae;
-  z-index: 15;
-  display: none;
-}
-
-.modal-3{
-  position:fixed;
-  inset: 0;
-  width: 100%;height: 100%;
-  background-color: #0b0b0aae;
-  z-index: 15;
-  display: none;
-}
-
 .menu-mobile {
   display: none;
 }
@@ -107,7 +89,7 @@ header::after {
 }
 
 .header_top-menu {
-  z-index: 16;
+  z-index: 10;
 }
 
 .header_top-menu--list {

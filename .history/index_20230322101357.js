@@ -22,27 +22,10 @@ window.onload = () => {
     let btnSearch = document.querySelector(".header_menu--item-2");
 
     let inputSearch = document.querySelector(".arrow-left input");
-    
-    let modal3 = document.querySelector(".modal-3");
-
-
-    
-
 
     btnSearch.onclick = () => {
-      modal3.style.display = "block";
       inputSearch.classList.toggle("active");
-      document.body.style.overflow = "hidden";
     };
-
-    modal3.onclick = () => {
-      modal3.style.display = "none";
-      inputSearch.classList.toggle("active");
-      document.body.style.overflow = "auto";
-
-    }
-
-    
   }
 
   clickSearch();
@@ -50,23 +33,17 @@ window.onload = () => {
   function clickNav() {
     let btnNav = document.querySelector(".header_menu--item-4");
     let listNav = document.querySelector(".header_menu--links");
-    let modal2 = document.querySelector(".modal-2");
-
-    
+    let modal = document.querySelector(".modal");
 
     btnNav.onclick = () => {
       listNav.classList.toggle("active2");
-      modal2.style.display = "block";
-      document.body.style.overflow = "hidden";
-
+      modal.style.display = "block";
     };
 
-    modal2.onclick = () => {
-      listNav.classList.toggle("active2");
-      modal2.style.display = "none";
-      document.body.style.overflow = "auto";
-
-    }
+    modal.onclick = () => {
+      listNav.classList.remove("active2");
+      modal.style.display = "none";
+    };
   }
 
   clickNav();
@@ -76,7 +53,6 @@ window.onload = () => {
     let btnExits = document.querySelector(".header_menu--exits");
     let menu = document.querySelector(".menu");
     let modal = document.querySelector(".modal");
-
 
     btnNavbar.onclick = () => {
       btnExits.style.visibility = "visible";
@@ -94,13 +70,13 @@ window.onload = () => {
       document.body.style.overflow = "auto";
     };
 
-    modal.onclick = () =>{
+    modal.onclick = () => {
       btnExits.style.visibility = "hidden";
       menu.style.left = "-100%";
       btnNavbar.style.display = "block";
       modal.style.display = "none";
       document.body.style.overflow = "auto";
-    }
+    };
   }
 
   handleMenu();
@@ -109,14 +85,12 @@ window.onload = () => {
     let btnNavMobi = document.querySelector(".menu-mobi-icon");
     let btnExitsMobi = document.querySelector(".menu-mobi-icon-exits");
     let menuMB = document.querySelector(".menu-mobile");
-    let modal = document.querySelector(".modal");
 
     btnNavMobi.onclick = () => {
       menuMB.style.left = "0%";
       btnExitsMobi.style.display = "block";
       btnNavMobi.style.display = "none";
       document.body.style.overflow = "hidden";
-      modal.style.display = "block";
     };
 
     btnExitsMobi.onclick = () => {
@@ -124,19 +98,8 @@ window.onload = () => {
       btnExitsMobi.style.display = "none";
       btnNavMobi.style.display = "block";
       document.body.style.overflow = "auto";
-      modal.style.display = "none";
     };
-
-    modal.onclick = () =>{
-      menuMB.style.left = "-100%";
-      btnExitsMobi.style.display = "none";
-      btnNavMobi.style.display = "block";
-      document.body.style.overflow = "auto";
-      modal.style.display = "none";
-    }
   }
 
   handleMenuMobile();
 };
-
-

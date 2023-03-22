@@ -25,24 +25,6 @@ body {
   display: none;
 }
 
-.modal-2{
-  position:fixed;
-  inset: 0;
-  width: 100%;height: 100%;
-  background-color: #0b0b0aae;
-  z-index: 15;
-  display: none;
-}
-
-.modal-3{
-  position:fixed;
-  inset: 0;
-  width: 100%;height: 100%;
-  background-color: #0b0b0aae;
-  z-index: 15;
-  display: none;
-}
-
 .menu-mobile {
   display: none;
 }
@@ -219,7 +201,7 @@ header::after {
   opacity: 0;
 }
 
-.arrow-left .active {
+.arrow-left ~ .active {
   visibility: visible;
   opacity: 1;
 }

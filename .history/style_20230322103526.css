@@ -2375,10 +2375,13 @@ h2 {
   }
 
   .section__logo-container {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    scroll-behavior: smooth;
+    scroll-snap-type: mandatory;
     justify-content: space-evenly;
     align-items: center;
+    
+    width: 3000px;
   }
 
   .section__logo-1 {

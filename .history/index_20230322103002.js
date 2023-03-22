@@ -109,14 +109,12 @@ window.onload = () => {
     let btnNavMobi = document.querySelector(".menu-mobi-icon");
     let btnExitsMobi = document.querySelector(".menu-mobi-icon-exits");
     let menuMB = document.querySelector(".menu-mobile");
-    let modal = document.querySelector(".modal");
 
     btnNavMobi.onclick = () => {
       menuMB.style.left = "0%";
       btnExitsMobi.style.display = "block";
       btnNavMobi.style.display = "none";
       document.body.style.overflow = "hidden";
-      modal.style.display = "block";
     };
 
     btnExitsMobi.onclick = () => {
@@ -124,16 +122,7 @@ window.onload = () => {
       btnExitsMobi.style.display = "none";
       btnNavMobi.style.display = "block";
       document.body.style.overflow = "auto";
-      modal.style.display = "none";
     };
-
-    modal.onclick = () =>{
-      menuMB.style.left = "-100%";
-      btnExitsMobi.style.display = "none";
-      btnNavMobi.style.display = "block";
-      document.body.style.overflow = "auto";
-      modal.style.display = "none";
-    }
   }
 
   handleMenuMobile();

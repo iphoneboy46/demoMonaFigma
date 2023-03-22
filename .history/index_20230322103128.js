@@ -124,16 +124,7 @@ window.onload = () => {
       btnExitsMobi.style.display = "none";
       btnNavMobi.style.display = "block";
       document.body.style.overflow = "auto";
-      modal.style.display = "none";
     };
-
-    modal.onclick = () =>{
-      menuMB.style.left = "-100%";
-      btnExitsMobi.style.display = "none";
-      btnNavMobi.style.display = "block";
-      document.body.style.overflow = "auto";
-      modal.style.display = "none";
-    }
   }
 
   handleMenuMobile();

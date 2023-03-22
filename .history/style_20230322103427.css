@@ -2376,9 +2376,11 @@ h2 {
 
   .section__logo-container {
     display: flex;
-    flex-direction: column;
+    scroll-behavior: smooth;
+    scroll-snap-type: mandatory;
     justify-content: space-evenly;
     align-items: center;
+    width: 2000px;
   }
 
   .section__logo-1 {
